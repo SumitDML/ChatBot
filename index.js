@@ -3,15 +3,15 @@ const body_parser = require("body-parser")
 const axios = require("axios");
 require("dotenv").config();
 
-const token = process.env.TOKEN;
-const mytoken = process.env.MYTOKEN;
-// const token = "EAAPZAvZBWBcaoBAFZAL1Yj9b9iZCIWxvI7WbccHADV1BLd0eQ8ITZBPJZBPZBDRZAPTeIINVSUcbs6ZBXnhkQw7e4ZCrWz4gfKuzzRrGvFSVrG0AlX9MikHQaIWGOwrMd3f0xLHmWlF1GZA04dJ8zZCuQg2LfxAQL5kLcTmmZCqgYeJusyOxuwQVKIgeZAhN0CagsxwwHSHOVOeImXZCQZDZD";
-// const mytoken = "sumit";
+// const token = process.env.TOKEN;
+// const mytoken = process.env.MYTOKEN;
+const token = "EAAPZAvZBWBcaoBAFZAL1Yj9b9iZCIWxvI7WbccHADV1BLd0eQ8ITZBPJZBPZBDRZAPTeIINVSUcbs6ZBXnhkQw7e4ZCrWz4gfKuzzRrGvFSVrG0AlX9MikHQaIWGOwrMd3f0xLHmWlF1GZA04dJ8zZCuQg2LfxAQL5kLcTmmZCqgYeJusyOxuwQVKIgeZAhN0CagsxwwHSHOVOeImXZCQZDZD";
+const mytoken = "sumit";
 
 const app = express().use(body_parser.json());
 
 
-app.listen(8000 || process.env.PORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Webhook is running!!!");
 });
 
