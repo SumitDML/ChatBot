@@ -27,6 +27,7 @@ app.get("/webhooks",(req,res)=>{
             res.status(200).send(challenge);
         }
         else{ 
+            console.log("Hello World!!");
             res.status(403);
         }
     }
